@@ -1,6 +1,30 @@
 /*Variables*/
 $background: rgb(43, 43, 43);
-$backgorund-gradient: linear-gradient(
+$backgorund-chrome: linear-gradient(
+  90deg,
+  rgba(43, 43, 43, 1) 0%,
+  rgba(88, 88, 88, 1) 49%,
+  rgba(43, 43, 43, 1) 100%
+);
+$backgorund-moz: -moz-linear-gradient(
+  90deg,
+  rgba(43, 43, 43, 1) 0%,
+  rgba(88, 88, 88, 1) 49%,
+  rgba(43, 43, 43, 1) 100%
+);
+$backgorund-o: -o-linear-gradient(
+  90deg,
+  rgba(43, 43, 43, 1) 0%,
+  rgba(88, 88, 88, 1) 49%,
+  rgba(43, 43, 43, 1) 100%
+);
+$backgorund-webkit: -webkit-linear-gradient(
+  90deg,
+  rgba(43, 43, 43, 1) 0%,
+  rgba(88, 88, 88, 1) 49%,
+  rgba(43, 43, 43, 1) 100%
+);
+$backgorund-ms: -ms-linear-gradient(
   90deg,
   rgba(43, 43, 43, 1) 0%,
   rgba(88, 88, 88, 1) 49%,
@@ -23,7 +47,8 @@ $backgorund-gradient: linear-gradient(
 body {
   /* background-image: linear-gradient(to bottom, #434343 0%, rgb(27, 27, 27) 100%); */
   background: $background;
-  background: $backgorund-gradient;
+  background: $backgorund-chrome, $backgorund-moz, $backgorund-ms, $backgorund-o,
+    $backgorund-webkit;
   font-family: "lato", sans-serif;
 }
 .social {
