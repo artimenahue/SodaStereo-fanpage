@@ -1,21 +1,29 @@
+/*Variables*/
+$background: rgb(43, 43, 43);
+$backgorund-gradient: linear-gradient(
+  90deg,
+  rgba(43, 43, 43, 1) 0%,
+  rgba(88, 88, 88, 1) 49%,
+  rgba(43, 43, 43, 1) 100%
+);
+
+/*--Mixing--*/
+@mixin cero($Margin, $Padding, $Outline) {
+  margin: $Margin;
+  padding: $Padding;
+  outline: $Outline;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   /* background-image: linear-gradient(to bottom, #434343 0%, rgb(27, 27, 27) 100%); */
-  background: #232526; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: $background;
+  background: $backgorund-gradient;
   font-family: "lato", sans-serif;
 }
 .social {
@@ -202,9 +210,7 @@ a {
   padding: 5px 0;
 }
 .text__album {
-  margin: 0;
-  padding: 0;
-  outline: 0;
+  @include cero(0, 0, 0);
 }
 .album--image {
   border-radius: 4px;
@@ -220,9 +226,7 @@ a {
   opacity: 1;
 }
 br {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  @include cero(0, 0, 0);
   outline: 0;
 }
 
@@ -282,7 +286,7 @@ br {
 
 @media only screen and (max-width: 420px) {
   html {
-    font-size: 38%;
+    font-size: 42%;
   }
   header {
     width: 100%;

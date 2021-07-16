@@ -1,3 +1,5 @@
+/*Variables*/
+/*--Mixing--*/
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +9,9 @@
 
 body {
   /* background-image: linear-gradient(to bottom, #434343 0%, rgb(27, 27, 27) 100%); */
-  background: #232526;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
-  background: linear-gradient(to right, #414345, #232526);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2b2b2b;
+  background: -webkit-gradient(linear, left top, right top, from(#2b2b2b), color-stop(49%, #585858), to(#2b2b2b));
+  background: linear-gradient(90deg, #2b2b2b 0%, #585858 49%, #2b2b2b 100%);
   font-family: "lato", sans-serif;
 }
 
@@ -272,7 +271,7 @@ a {
 br {
   margin: 0;
   padding: 0;
-  border: 0;
+  outline: 0;
   outline: 0;
 }
 
@@ -345,7 +344,7 @@ br {
 
 @media only screen and (max-width: 420px) {
   html {
-    font-size: 38%;
+    font-size: 42%;
   }
   header {
     width: 100%;
