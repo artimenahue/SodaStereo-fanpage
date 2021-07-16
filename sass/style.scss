@@ -45,7 +45,6 @@ $backgorund-ms: -ms-linear-gradient(
 }
 
 body {
-  /* background-image: linear-gradient(to bottom, #434343 0%, rgb(27, 27, 27) 100%); */
   background: $background;
   background: $backgorund-chrome, $backgorund-moz, $backgorund-ms, $backgorund-o,
     $backgorund-webkit;

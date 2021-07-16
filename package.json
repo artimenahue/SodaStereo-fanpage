@@ -1,0 +1,20 @@
+{
+  "name": "cuarta-entrega",
+  "version": "1.0.0",
+  "description": "Sitio Web sobre la banda musical Soda Stereo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nahuesass": "sass --watch sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artimenahue/SodaStereo-fanpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artimenahue/SodaStereo-fanpage/issues"
+  },
+  "homepage": "https://github.com/artimenahue/SodaStereo-fanpage#readme"
+}
